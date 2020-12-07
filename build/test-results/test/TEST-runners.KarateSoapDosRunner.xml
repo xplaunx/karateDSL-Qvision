@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.KarateSoapDosRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DESKTOP-HJTASJM" time="0.0">
+  <properties/>
+  <system-out><![CDATA[15:52:33.004 [Test worker] WARN com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+---------------------------------------------------------
+feature: src/test/resources/features/karate_soap_dos.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1,5921
+---------------------------------------------------------
+
+HTML report: (paste into browser to view) | Karate version: 0.9.6
+file:/C:/Users/sebas/eclipse-workspace/Automatización%20de%20servicios%20Web%20con%20Karate%20DSL/build/surefire-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.resources.features.karate_soap_dos</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-12-07 03:52:34 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:6]">[1:6] Cuenta bancaria SOAP - Karate DSL </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/resources/features/karate_soap_dos.feature</span><span class="feature-description">Ejemplo Dos - Cuenta bancaria - Automatizaci&oacute;n con Karate DSL Q-Vision</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:6]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Cuenta bancaria SOAP - Karate DSL </span>
+</div>
+<div class="scenario-time passed">ms: 1592</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:6]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:6]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def urlPath = 'http://www.thomas-bayer.com/axis2/services/BLZService'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="preformatted" data-parent="1">15:52:33.013 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given url urlPath</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="3">&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;blz:getBank&gt;
+         &lt;blz:blz&gt;39060180&lt;/blz:blz&gt;
+      &lt;/blz:getBank&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">When soap action urlPath + '/getBank'</div>
+</div>
+<div class="time-cell passed">1571</div>
+</div>
+<div class="preformatted" data-parent="4">15:52:33.796 request:
+1 &gt; POST http://www.thomas-bayer.com/axis2/services/BLZService
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 280
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.thomas-bayer.com
+1 &gt; SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/"&gt;&#13;
+   &lt;soapenv:Header/&gt;&#13;
+   &lt;soapenv:Body&gt;&#13;
+      &lt;blz:getBank&gt;&#13;
+         &lt;blz:blz&gt;39060180&lt;/blz:blz&gt;&#13;
+      &lt;/blz:getBank&gt;&#13;
+   &lt;/soapenv:Body&gt;&#13;
+&lt;/soapenv:Envelope&gt;
+
+15:52:34.620 response time in milliseconds: 821,41
+1 &lt; 200
+1 &lt; Content-Length: 400
+1 &lt; Content-Type: text/xml;charset=UTF-8
+1 &lt; Date: Mon, 07 Dec 2020 20:52:39 GMT
+1 &lt; Server: Apache-Coyote/1.1
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;&lt;soapenv:Body&gt;&lt;ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/"&gt;&lt;ns1:details&gt;&lt;ns1:bezeichnung&gt;Aachener Bank&lt;/ns1:bezeichnung&gt;&lt;ns1:bic&gt;GENODED1AAC&lt;/ns1:bic&gt;&lt;ns1:ort&gt;Aachen&lt;/ns1:ort&gt;&lt;ns1:plz&gt;52001&lt;/ns1:plz&gt;&lt;/ns1:details&gt;&lt;/ns1:getBankResponse&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And match /Envelope/Body/getBankResponse/details//bezeichnung == 'Aachener Bank'</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">And print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="7">15:52:34.635 [print] &lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"&gt;&#13;
+  &lt;soapenv:Body&gt;&#13;
+    &lt;ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/"&gt;&#13;
+      &lt;ns1:details&gt;&#13;
+        &lt;ns1:bezeichnung&gt;Aachener Bank&lt;/ns1:bezeichnung&gt;&#13;
+        &lt;ns1:bic&gt;GENODED1AAC&lt;/ns1:bic&gt;&#13;
+        &lt;ns1:ort&gt;Aachen&lt;/ns1:ort&gt;&#13;
+        &lt;ns1:plz&gt;52001&lt;/ns1:plz&gt;&#13;
+      &lt;/ns1:details&gt;&#13;
+    &lt;/ns1:getBankResponse&gt;&#13;
+  &lt;/soapenv:Body&gt;&#13;
+&lt;/soapenv:Envelope&gt;</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

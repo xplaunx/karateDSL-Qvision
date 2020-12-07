@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="[karate_soap_dos] Ejemplo Dos - Cuenta bancaria - Automatización con Karate DSL Q-Vision" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-07T20:52:33" hostname="DESKTOP-HJTASJM" time="1.62">
+  <properties/>
+  <testcase name="[1:6] Cuenta bancaria SOAP - Karate DSL" classname="[karate_soap_dos] Ejemplo Dos - Cuenta bancaria - Automatización con Karate DSL Q-Vision" time="1.62"/>
+  <system-out><![CDATA[15:52:33.769 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+15:52:33.789 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+15:52:33.794 [Test worker] DEBUG com.intuit.karate - request:
+1 > POST http://www.thomas-bayer.com/axis2/services/BLZService
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 280
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.thomas-bayer.com
+1 > SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>39060180</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+15:52:33.799 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://www.thomas-bayer.com:80][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+15:52:33.835 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://www.thomas-bayer.com:80][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+15:52:33.839 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}->http://www.thomas-bayer.com:80
+15:52:33.871 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to www.thomas-bayer.com/80.152.243.114:80
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.50:59937<->80.152.243.114:80
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /axis2/services/BLZService HTTP/1.1
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+15:52:34.062 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /axis2/services/BLZService HTTP/1.1
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: text/xml; charset=UTF-8
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 280
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: www.thomas-bayer.com
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+15:52:34.067 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /axis2/services/BLZService HTTP/1.1[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: text/xml; charset=UTF-8[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 280[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: www.thomas-bayer.com[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">[\r][\n]"
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "   <soapenv:Header/>[\r][\n]"
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "   <soapenv:Body>[\r][\n]"
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "      <blz:getBank>[\r][\n]"
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "         <blz:blz>39060180</blz:blz>[\r][\n]"
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "      </blz:getBank>[\r][\n]"
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "   </soapenv:Body>[\r][\n]"
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 >> "</soapenv:Envelope>"
+15:52:34.602 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+15:52:34.602 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: Apache-Coyote/1.1[\r][\n]"
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: text/xml;charset=UTF-8[\r][\n]"
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Mon, 07 Dec 2020 20:52:39 GMT[\r][\n]"
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Length: 400[\r][\n]"
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 << "<?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/"><ns1:details><ns1:bezeichnung>Aachener Bank</ns1:bezeichnung><ns1:bic>GENODED1AAC</ns1:bic><ns1:ort>Aachen</ns1:ort><ns1:plz>52001</ns1:plz></ns1:details></ns1:getBankResponse></soapenv:Body></soapenv:Envelope>"
+15:52:34.607 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 OK
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Server: Apache-Coyote/1.1
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: text/xml;charset=UTF-8
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Mon, 07 Dec 2020 20:52:39 GMT
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Length: 400
+15:52:34.613 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+15:52:34.619 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://www.thomas-bayer.com:80] can be kept alive indefinitely
+15:52:34.619 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+15:52:34.620 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://www.thomas-bayer.com:80][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+15:52:34.620 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 821,41
+1 < 200
+1 < Content-Length: 400
+1 < Content-Type: text/xml;charset=UTF-8
+1 < Date: Mon, 07 Dec 2020 20:52:39 GMT
+1 < Server: Apache-Coyote/1.1
+<?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/"><ns1:details><ns1:bezeichnung>Aachener Bank</ns1:bezeichnung><ns1:bic>GENODED1AAC</ns1:bic><ns1:ort>Aachen</ns1:ort><ns1:plz>52001</ns1:plz></ns1:details></ns1:getBankResponse></soapenv:Body></soapenv:Envelope>
+
+15:52:34.634 [Test worker] INFO com.intuit.karate - [print] <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/">
+      <ns1:details>
+        <ns1:bezeichnung>Aachener Bank</ns1:bezeichnung>
+        <ns1:bic>GENODED1AAC</ns1:bic>
+        <ns1:ort>Aachen</ns1:ort>
+        <ns1:plz>52001</ns1:plz>
+      </ns1:details>
+    </ns1:getBankResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

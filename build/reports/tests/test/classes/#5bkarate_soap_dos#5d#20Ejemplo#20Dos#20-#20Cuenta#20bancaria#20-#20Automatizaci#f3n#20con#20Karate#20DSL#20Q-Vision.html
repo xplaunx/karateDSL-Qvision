@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class [karate_soap_dos] Ejemplo Dos - Cuenta bancaria - Automatización con Karate DSL Q-Vision</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class [karate_soap_dos] Ejemplo Dos - Cuenta bancaria - Automatización con Karate DSL Q-Vision</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; [karate_soap_dos] Ejemplo Dos - Cuenta bancaria - Automatización con Karate DSL Q-Vision</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.620s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">[1:6] Cuenta bancaria SOAP - Karate DSL</td>
+<td class="success">1.620s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:52:33.769 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: karate
+15:52:33.789 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+15:52:33.794 [Test worker] DEBUG com.intuit.karate - request:
+1 &gt; POST http://www.thomas-bayer.com/axis2/services/BLZService
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 280
+1 &gt; Content-Type: text/xml; charset=UTF-8
+1 &gt; Host: www.thomas-bayer.com
+1 &gt; SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:blz=&quot;http://thomas-bayer.com/blz/&quot;&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;blz:getBank&gt;
+         &lt;blz:blz&gt;39060180&lt;/blz:blz&gt;
+      &lt;/blz:getBank&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+
+15:52:33.799 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://www.thomas-bayer.com:80][total available: 0; route allocated: 0 of 5; total allocated: 0 of 10]
+15:52:33.835 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}-&gt;http://www.thomas-bayer.com:80][total available: 0; route allocated: 1 of 5; total allocated: 1 of 10]
+15:52:33.839 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://www.thomas-bayer.com:80
+15:52:33.871 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to www.thomas-bayer.com/80.152.243.114:80
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.1.50:59937&lt;-&gt;80.152.243.114:80
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 30000
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /axis2/services/BLZService HTTP/1.1
+15:52:34.061 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+15:52:34.062 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; POST /axis2/services/BLZService HTTP/1.1
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-Type: text/xml; charset=UTF-8
+15:52:34.066 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Content-Length: 280
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Host: www.thomas-bayer.com
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+15:52:34.067 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &gt;&gt; Accept-Encoding: gzip,deflate
+15:52:34.067 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;POST /axis2/services/BLZService HTTP/1.1[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Type: text/xml; charset=UTF-8[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Content-Length: 280[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Host: www.thomas-bayer.com[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:blz=&quot;http://thomas-bayer.com/blz/&quot;&gt;[\r][\n]&quot;
+15:52:34.068 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;   &lt;soapenv:Header/&gt;[\r][\n]&quot;
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;   &lt;soapenv:Body&gt;[\r][\n]&quot;
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;      &lt;blz:getBank&gt;[\r][\n]&quot;
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;         &lt;blz:blz&gt;39060180&lt;/blz:blz&gt;[\r][\n]&quot;
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;      &lt;/blz:getBank&gt;[\r][\n]&quot;
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;   &lt;/soapenv:Body&gt;[\r][\n]&quot;
+15:52:34.069 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &gt;&gt; &quot;&lt;/soapenv:Envelope&gt;&quot;
+15:52:34.602 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 200 OK[\r][\n]&quot;
+15:52:34.602 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Server: Apache-Coyote/1.1[\r][\n]&quot;
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Type: text/xml;charset=UTF-8[\r][\n]&quot;
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Date: Mon, 07 Dec 2020 20:52:39 GMT[\r][\n]&quot;
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;Content-Length: 400[\r][\n]&quot;
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+15:52:34.603 [Test worker] DEBUG org.apache.http.wire - http-outgoing-0 &lt;&lt; &quot;&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Body&gt;&lt;ns1:getBankResponse xmlns:ns1=&quot;http://thomas-bayer.com/blz/&quot;&gt;&lt;ns1:details&gt;&lt;ns1:bezeichnung&gt;Aachener Bank&lt;/ns1:bezeichnung&gt;&lt;ns1:bic&gt;GENODED1AAC&lt;/ns1:bic&gt;&lt;ns1:ort&gt;Aachen&lt;/ns1:ort&gt;&lt;ns1:plz&gt;52001&lt;/ns1:plz&gt;&lt;/ns1:details&gt;&lt;/ns1:getBankResponse&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;&quot;
+15:52:34.607 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; HTTP/1.1 200 OK
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Server: Apache-Coyote/1.1
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Type: text/xml;charset=UTF-8
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Date: Mon, 07 Dec 2020 20:52:39 GMT
+15:52:34.608 [Test worker] DEBUG org.apache.http.headers - http-outgoing-0 &lt;&lt; Content-Length: 400
+15:52:34.613 [Test worker] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+15:52:34.619 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}-&gt;http://www.thomas-bayer.com:80] can be kept alive indefinitely
+15:52:34.619 [Test worker] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+15:52:34.620 [Test worker] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}-&gt;http://www.thomas-bayer.com:80][total available: 1; route allocated: 1 of 5; total allocated: 1 of 10]
+15:52:34.620 [Test worker] DEBUG com.intuit.karate - response time in milliseconds: 821,41
+1 &lt; 200
+1 &lt; Content-Length: 400
+1 &lt; Content-Type: text/xml;charset=UTF-8
+1 &lt; Date: Mon, 07 Dec 2020 20:52:39 GMT
+1 &lt; Server: Apache-Coyote/1.1
+&lt;?xml version='1.0' encoding='UTF-8'?&gt;&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soapenv:Body&gt;&lt;ns1:getBankResponse xmlns:ns1=&quot;http://thomas-bayer.com/blz/&quot;&gt;&lt;ns1:details&gt;&lt;ns1:bezeichnung&gt;Aachener Bank&lt;/ns1:bezeichnung&gt;&lt;ns1:bic&gt;GENODED1AAC&lt;/ns1:bic&gt;&lt;ns1:ort&gt;Aachen&lt;/ns1:ort&gt;&lt;ns1:plz&gt;52001&lt;/ns1:plz&gt;&lt;/ns1:details&gt;&lt;/ns1:getBankResponse&gt;&lt;/soapenv:Body&gt;&lt;/soapenv:Envelope&gt;
+
+15:52:34.634 [Test worker] INFO com.intuit.karate - [print] &lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;soapenv:Body&gt;
+    &lt;ns1:getBankResponse xmlns:ns1=&quot;http://thomas-bayer.com/blz/&quot;&gt;
+      &lt;ns1:details&gt;
+        &lt;ns1:bezeichnung&gt;Aachener Bank&lt;/ns1:bezeichnung&gt;
+        &lt;ns1:bic&gt;GENODED1AAC&lt;/ns1:bic&gt;
+        &lt;ns1:ort&gt;Aachen&lt;/ns1:ort&gt;
+        &lt;ns1:plz&gt;52001&lt;/ns1:plz&gt;
+      &lt;/ns1:details&gt;
+    &lt;/ns1:getBankResponse&gt;
+  &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.2.1</a> at 7/12/2020 03:52:34 PM</p>
+</div>
+</div>
+</body>
+</html>

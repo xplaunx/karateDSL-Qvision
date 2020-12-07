@@ -1,0 +1,123 @@
+15:52:33.013 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:52:33.796 request:
+1 > POST http://www.thomas-bayer.com/axis2/services/BLZService
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 280
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.thomas-bayer.com
+1 > SOAPAction: http://www.thomas-bayer.com/axis2/services/BLZService/getBank
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <blz:getBank>
+         <blz:blz>39060180</blz:blz>
+      </blz:getBank>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+15:52:34.620 response time in milliseconds: 821,41
+1 < 200
+1 < Content-Length: 400
+1 < Content-Type: text/xml;charset=UTF-8
+1 < Date: Mon, 07 Dec 2020 20:52:39 GMT
+1 < Server: Apache-Coyote/1.1
+<?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/"><ns1:details><ns1:bezeichnung>Aachener Bank</ns1:bezeichnung><ns1:bic>GENODED1AAC</ns1:bic><ns1:ort>Aachen</ns1:ort><ns1:plz>52001</ns1:plz></ns1:details></ns1:getBankResponse></soapenv:Body></soapenv:Envelope>
+
+15:52:34.635 [print] <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/">
+      <ns1:details>
+        <ns1:bezeichnung>Aachener Bank</ns1:bezeichnung>
+        <ns1:bic>GENODED1AAC</ns1:bic>
+        <ns1:ort>Aachen</ns1:ort>
+        <ns1:plz>52001</ns1:plz>
+      </ns1:details>
+    </ns1:getBankResponse>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+culator.asmx?op=Multiply
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 301
+1 > Content-Type: text/xml; charset=UTF-8
+1 > Host: www.dneonline.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:Multiply>
+         <tem:intA>5</tem:intA>
+         <tem:intB>3</tem:intB>
+      </tem:Multiply>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+15:36:13.115 response time in milliseconds: 317,33
+1 < 200
+1 < Cache-Control: private, max-age=0
+1 < Content-Type: text/xml; charset=utf-8
+1 < Date: Mon, 07 Dec 2020 20:36:13 GMT
+1 < Server: Microsoft-IIS/7.5
+1 < Vary: Accept-Encoding
+1 < X-AspNet-Version: 2.0.50727
+1 < X-Powered-By: ASP.NET
+<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><MultiplyResponse xmlns="http://tempuri.org/"><MultiplyResult>15</MultiplyResult></MultiplyResponse></soap:Body></soap:Envelope>
+
+15:36:13.149 [print] response:  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soap:Body>
+    <MultiplyResponse xmlns="http://tempuri.org/">
+      <MultiplyResult>15</MultiplyResult>
+    </MultiplyResponse>
+  </soap:Body>
+</soap:Envelope>
+
+ng: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1607370474
+1 < cf-request-id: 06e05758e30000f816fc876000000001
+{
+  "userId": "prueba2",
+  "id": 1,
+  "title": 24523,
+  "body": "sdsds"
+}
+
+14:47:04.365 [print] Response is:  {
+  "id": 1,
+  "title": 24523,
+  "body": "sdsds",
+  "userId": "prueba2"
+}
+
+e-Options: nosniff
+1 < X-Powered-By: Express
+1 < X-Ratelimit-Limit: 1000
+1 < X-Ratelimit-Remaining: 998
+1 < X-Ratelimit-Reset: 1607369814
+1 < cf-request-id: 06e04d98970000d2acc1071000000001
+{
+  "userId": "2",
+  "id": 101,
+  "title": "Automatización con Karate DSL",
+  "body": "Aprendiendo automatizar servicios web con Karate DSL Q-Vision"
+}
+
+14:36:25.325 [print] {
+  "id": 101,
+  "title": "Automatización con Karate DSL",
+  "body": "Aprendiendo automatizar servicios web con Karate DSL Q-Vision",
+  "userId": "2"
+}
+
+2"
+}
+
+pected: {title=Automatización, body=servicios web}, reason: actual value has 2 more key(s) than expected: {id=101, userId=2}

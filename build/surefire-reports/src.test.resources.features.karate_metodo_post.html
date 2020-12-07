@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.resources.features.karate_metodo_post</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">2</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-12-07 02:36:25 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:6]">[1:6] Metodo Post REST API automatizaci&oacute;n Q-Vision </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:14]">[2:14] Metodo Post REST API automatizaci&oacute;n Q-Vision con lectura de JSON en archivo </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/resources/features/karate_metodo_post.feature</span><span class="feature-description">Metodo POST Practica Karate Q-Vision</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:6]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">Metodo Post REST API automatizaci&oacute;n Q-Vision </span>
+</div>
+<div class="scenario-time passed">ms: 3332</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:6]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:6]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="1">14:36:20.653 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given path 'posts'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* def jsonData =  { "userId": "1", "id": "501", "title": "xrendezw 2223", "body": "renato213    23232dsfd"}</div>
+</div>
+<div class="time-cell passed">134</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">And request jsonData</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">3182</div>
+</div>
+<div class="preformatted" data-parent="5">14:36:21.479 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 81
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+{"userId":"1","id":"501","title":"xrendezw 2223","body":"renato213    23232dsfd"}
+
+14:36:24.006 response time in milliseconds: 2515,98
+1 &lt; 201
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 5fe0b1fe7af9d2bc-EZE
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 96
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 07 Dec 2020 19:36:24 GMT
+1 &lt; Etag: W/"60-mzCQzjXy4LSDU87QYAmBFyuQvAs"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Expires: -1
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=ykF4D1oCZLIBLQavGwUemHAme9BTSS3UJA%2BycKdqRW0c1%2FRdwdrlZcJygnSy2Ls2uPNTZ1gr0maeeUvNPg6kNM%2BBTyeBYLt4XOXpxLPSdbam4EqGi7QzLjdPKlzZ"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=dfa75fc71c60dcc0989ea7e854371ec551607369784; expires=Wed, 06-Jan-21 19:36:24 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1607369814
+1 &lt; cf-request-id: 06e04d93090000d2bcbcaac000000001
+{
+  "userId": "1",
+  "id": 101,
+  "title": "xrendezw 2223",
+  "body": "renato213    23232dsfd"
+}</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">Then match $ contains {title: 'xrendezw 2223'}</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="7">14:36:24.016 [print] {
+  "id": 101,
+  "title": "xrendezw 2223",
+  "body": "renato213    23232dsfd",
+  "userId": "1"
+}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:14]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:14]</span><span class="scenario-name">Metodo Post REST API automatizaci&oacute;n Q-Vision con lectura de JSON en archivo </span>
+</div>
+<div class="scenario-time passed">ms: 1271</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:14]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:14]bg">
+<div class="step-container" id="8">
+<div class="step-ref bg-step">8</div>
+<div class="step-cell passed">* url 'https://jsonplaceholder.typicode.com'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="8">14:36:24.052 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">Given path 'posts'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And request read('../json/data.json')</div>
+</div>
+<div class="time-cell passed">330</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">When method POST</div>
+</div>
+<div class="time-cell passed">937</div>
+</div>
+<div class="preformatted" data-parent="11">14:36:24.391 request:
+1 &gt; POST https://jsonplaceholder.typicode.com/posts
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 137
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+{"userId":"2","id":"101","title":"Automatizaci&oacute;n con Karate DSL","body":"Aprendiendo automatizar servicios web con Karate DSL Q-Vision"}
+
+14:36:25.323 response time in milliseconds: 929,79
+1 &lt; 201
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Expose-Headers: Location
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 5fe0b2075da4d2ac-EZE
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 152
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 07 Dec 2020 19:36:25 GMT
+1 &lt; Etag: W/"98-fttbMuRlEU/2/q2QfZ2E5SPgnBQ"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Expires: -1
+1 &lt; Location: http://jsonplaceholder.typicode.com/posts/101
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=d8wilBLUGl0AgTF5v%2B30iCnVt0SfBawy5Mbao2nxEr2OkJCCtJBEU5FYkVSgmyIlGXm6Tbcilc5lRyYMndPh%2FfapADxTlmRlsYx%2FBO1AtHlDQxwZJM3jKNaX9gTQ"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=df98747fdefb138907c459c796615aa3b1607369785; expires=Wed, 06-Jan-21 19:36:25 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 998
+1 &lt; X-Ratelimit-Reset: 1607369814
+1 &lt; cf-request-id: 06e04d98970000d2acc1071000000001
+{
+  "userId": "2",
+  "id": 101,
+  "title": "Automatizaci&oacute;n con Karate DSL",
+  "body": "Aprendiendo automatizar servicios web con Karate DSL Q-Vision"
+}</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And match $ contains {title: 'Automatizaci&oacute;n con Karate DSL', body: 'Aprendiendo automatizar servicios web con Karate DSL Q-Vision'}</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">* print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="14">14:36:25.325 [print] {
+  "id": 101,
+  "title": "Automatizaci&oacute;n con Karate DSL",
+  "body": "Aprendiendo automatizar servicios web con Karate DSL Q-Vision",
+  "userId": "2"
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

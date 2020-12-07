@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.resources.features.karate_metodo_put</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2020-12-07 02:53:57 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1.1:12]">[1.1:12] Metodo PUT - Practica Q-Vision utilizando escenario outline </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/resources/features/karate_metodo_put.feature</span><span class="feature-description">Metodo PUT practica Q-Vision</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1.1:12]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario Outline: [1.1:12]</span><span class="scenario-name">Metodo PUT - Practica Q-Vision utilizando escenario outline </span>
+</div>
+<div class="scenario-time passed">ms: 2893</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url 'https://jsonplaceholder.typicode.com/posts/1'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="1">14:53:54.604 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">When request { "userId":100, "id":1, "title":Metodo put Qvision Karate, "body":Karate DSL Automatizaci&oacute;n  }</div>
+</div>
+<div class="time-cell passed">141</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">And method put</div>
+</div>
+<div class="time-cell passed">2742</div>
+</div>
+<div class="preformatted" data-parent="3">14:53:55.565 request:
+1 &gt; PUT https://jsonplaceholder.typicode.com/posts/1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 93
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: jsonplaceholder.typicode.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_231)
+{"userId":100,"id":1,"title":"Metodo put Qvision Karate","body":"Karate DSL Automatizaci&oacute;n"}
+
+14:53:57.513 response time in milliseconds: 1940,32
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 5fe0cbb7481774d3-EZE
+1 &lt; Cache-Control: no-cache
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Mon, 07 Dec 2020 19:53:58 GMT
+1 &lt; Etag: W/"6e-HGOghm3uD2vr0lhWJcyGLUN2z/I"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Expires: -1
+1 &lt; NEL: {"report_to":"cf-nel","max_age":604800}
+1 &lt; Pragma: no-cache
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=znHLtN5luiao%2FazrxQ0UEEf%2F%2Bl2DwtoIrXPoE%2B5updX54pHZHv55a9pjAKMhLHre1bdMNx0lnmPfnyHFyb27xlw3eKJ%2BLcWa8ud6JGrXJs%2F2xfCqMesv9V85fM9I"}],"group":"cf-nel","max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d46c32a579b2229ae4d54e1cb4d2d28211607370837; expires=Wed, 06-Jan-21 19:53:57 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: Express
+1 &lt; X-Ratelimit-Limit: 1000
+1 &lt; X-Ratelimit-Remaining: 999
+1 &lt; X-Ratelimit-Reset: 1607370894
+1 &lt; cf-request-id: 06e05da68e000074d3121cc000000001
+{
+  "userId": 100,
+  "id": 1,
+  "title": "Metodo put Qvision Karate",
+  "body": "Karate DSL Automatizaci&oacute;n"
+}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And print 'Response is: ', response</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="preformatted" data-parent="5">14:53:57.521 [print] Response is:  {
+  "id": 1,
+  "title": "Metodo put Qvision Karate",
+  "body": "Karate DSL Automatizaci&oacute;n",
+  "userId": 100
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
